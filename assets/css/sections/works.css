@@ -1,0 +1,27 @@
+.works-wrapper .Headline--v1 {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline--txt {
+    margin-top: 22px;
+}
+
+.absolute {
+    position: absolute;
+
+}
+
+.bg-sec-title {
+    font-size: 130px;
+    font-weight: 700;
+    letter-spacing: 13px;
+    background: linear-gradient(90deg, rgba(115, 68, 236, 0.10) 0%, rgba(145, 98, 254, 0.10) 50%, rgba(167, 127, 255, 0.10) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
