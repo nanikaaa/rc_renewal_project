@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSans.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========================================
+   GLOBAL RESPONSIVE FOUNDATION
+======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--noto-sans);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+header,
+main,
+footer,
+section {
+  width: 100%;
+  min-width: 0;
+}
+
+header > *,
+main > *,
+footer > *,
+section > * {
+  min-width: 0;
+}
+/* ============================ */
+
+:root {
+  --noto-sans: "Noto Sans JP", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --font-awesome: "Font Awesome 6 Free";
+
+  --f12: 0.75rem;
+  --f16: 1rem;
+  --f24: 1.5rem;
+  --f28: 1.75rem;
+  --f32: 2rem;
+  --f36: 2.25rem;
+  --f40: 2.5rem;
+  --f48: 3rem;
+  --f56: 3.5rem;
+  --f64: 4rem;
+
+  /* color */
+  --linear-bg: linear-gradient(90deg, #4162f7 0%, #c847b0 100%);
+  --white: #fff;
+  --black: #111;
+  --secondary-black: #949494;
+
+  /*padding*/
+  --pd-top-v200: 200px;
+}

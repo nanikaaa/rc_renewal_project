@@ -1,0 +1,158 @@
+<header class="site-header" id="site-header">
+    <div class="header-top">
+        <a href="./" class="logo" aria-label="RIGHTCORE ホーム">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/common/logo-sp.svg" />
+
+                <img src="./assets/img/common/logo.svg" alt="RIGHTCORE" width="200" height="51" />
+            </picture>
+        </a>
+
+        <div class="contact-block-wrap">
+            <a href="#contact" class="contact-btn">
+                <svg class="contact-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="contact-gradient" x1="0" y1="0" x2="20" y2="0">
+                            <stop offset="0" stop-color="#4268f5" />
+                            <stop offset="1" stop-color="#c63fc0" />
+                        </linearGradient>
+                    </defs>
+
+                    <path class="phone-default"
+                        d="M7.25 2.01A2 2 0 0 0 5.4.75H2.64A1.9 1.9 0 0 0 .75 2.64c0 8.9 7.21 16.11 16.11 16.11a1.9 1.9 0 0 0 1.89-1.9V14.1a2 2 0 0 0-1.26-1.85l-2.63-1.06a2 2 0 0 0-2.03.32l-.68.57a2 2 0 0 1-2.7-.12l-1.91-1.92a2 2 0 0 1-.12-2.69l.57-.68a2 2 0 0 0 .32-2.03Z"
+                        fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <path class="phone-hover"
+                        d="M7.25 2.01A2 2 0 0 0 5.4.75H2.64A1.9 1.9 0 0 0 .75 2.64c0 8.9 7.21 16.11 16.11 16.11a1.9 1.9 0 0 0 1.89-1.9V14.1a2 2 0 0 0-1.26-1.85l-2.63-1.06a2 2 0 0 0-2.03.32l-.68.57a2 2 0 0 1-2.7-.12l-1.91-1.92a2 2 0 0 1-.12-2.69l.57-.68a2 2 0 0 0 .32-2.03Z"
+                        fill="none" stroke="url(#contact-gradient)" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <span>CONTACT</span>
+            </a>
+
+            <span class="ig-block" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="instagram-gradient" x1="0" y1="0" x2="20" y2="20">
+                            <stop offset="0" stop-color="#4162f7" />
+                            <stop offset="1" stop-color="#c847b0" />
+                        </linearGradient>
+                    </defs>
+
+                    <rect x="1.5" y="1.5" width="17" height="17" rx="5" fill="none" stroke="url(#instagram-gradient)"
+                        stroke-width="1.5" />
+
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="url(#instagram-gradient)" stroke-width="1.5" />
+
+                    <circle cx="15.3" cy="4.8" r="1" fill="url(#instagram-gradient)" />
+                </svg>
+            </span>
+
+            <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-controls="main-navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <nav class="main-nav_block" id="main-navigation" aria-label="メインナビゲーション">
+        <div class="inner-main_nav-block">
+            <div class="block_search_lang">
+                <form class="search-box" action="#" method="get" role="search">
+                    <button type="submit" aria-label="検索">
+                        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="6"></circle>
+                            <line x1="16" y1="16" x2="21" y2="21"></line>
+                        </svg>
+                    </button>
+
+                    <input type="search" name="s" placeholder="Search" aria-label="サイト内検索" />
+                </form>
+
+                <div class="language-select">
+                    <button class="language-btn" type="button" aria-expanded="false" aria-controls="language-menu">
+                        <svg class="language-icon" viewBox="0 0 18 18" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="language-gradient" x1="0" y1="0" x2="18" y2="18">
+                                    <stop offset="0" stop-color="#4162f7" />
+                                    <stop offset="1" stop-color="#c847b0" />
+                                </linearGradient>
+                            </defs>
+
+                            <circle cx="9" cy="9" r="7.5" />
+
+                            <path d="M1.8 9h14.4M9 1.5c2.8 3 2.8 12 0 15M9 1.5c-2.8 3-2.8 12 0 15" />
+                        </svg>
+
+                        <span class="language-current">EN</span>
+
+                        <span class="chevron" aria-hidden="true">
+                            <svg viewBox="0 0 12 7">
+                                <path d="M1 1l5 5 5-5"></path>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="language-menu" id="language-menu">
+                        <button type="button" data-lang="EN">English</button>
+                        <button type="button" data-lang="JP">日本語</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="top-navigation">
+                <li>
+                    <a href="#about" class="nav-block1">
+                        <span class="nv-b">About</span>
+                        <span class="nv-m">私たちについて</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#service" class="nav-block1">
+                        <span class="nv-b">Service</span>
+                        <span class="nv-m">サービス紹介</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#company" class="nav-block1">
+                        <span class="nv-b">Company</span>
+                        <span class="nv-m">会社概要</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#works" class="nav-block1">
+                        <span class="nv-b">Works</span>
+                        <span class="nv-m">実績</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#recruit" class="nav-block1">
+                        <span class="nv-b">Recruit</span>
+                        <span class="nv-m">採用情報</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#faq" class="nav-block1">
+                        <span class="nv-b">FAQ</span>
+                        <span class="nv-m">よくあるご質問</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#news" class="nav-block1">
+                        <span class="nv-b">News</span>
+                        <span class="nv-m">ニュース</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

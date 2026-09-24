@@ -1,0 +1,102 @@
+.language-select {
+  position: relative;
+  display: inline-block;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border: 0;
+  background: transparent;
+  color: #7545e8;
+  font-family: var(--montserrat);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.language-icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: url("#language-gradient");
+  stroke-width: 1.2;
+}
+
+.language-current {
+  background: var(--linear-bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--montserrat);
+  line-height: 1;
+}
+
+.chevron {
+  display: flex;
+  width: 11px;
+  height: 7px;
+  margin-left: 2px;
+  transition: transform 0.25s ease;
+}
+
+.chevron svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #7545e8;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Dropdown menu */
+.language-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  z-index: 10;
+  min-width: 120px;
+  padding: 6px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 10%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -5px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.language-menu button {
+  width: 100%;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.language-menu button:hover,
+.language-menu button:focus-visible {
+  background: #f5efff;
+  color: #7545e8;
+}
+
+/* Open state */
+.language-select.active .language-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.language-select.active .chevron {
+  transform: rotate(180deg);
+}

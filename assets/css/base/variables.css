@@ -1,0 +1,45 @@
+@property --gradient-start {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #949494;
+}
+
+@property --gradient-end {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #949494;
+}
+
+:root {
+  /* Font families */
+  --noto-sans: "Noto Sans JP", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+
+  /* Font sizes */
+  --f12: 0.75rem;
+  --f16: 1rem;
+  --f24: 1.5rem;
+  --f28: 1.75rem;
+  --f32: 2rem;
+  --f36: 2.25rem;
+  --f40: 2.5rem;
+  --f48: 3rem;
+  --f56: 3.5rem;
+  --f64: 4rem;
+
+  /* Colors */
+  --blue: #4162f7;
+  --pink: #c847b0;
+  --white: #ffffff;
+  --black: #111111;
+  --secondary-black: #949494;
+
+  /* Gradients */
+  --linear-bg: linear-gradient(90deg, var(--blue) 0%, var(--pink) 100%);
+
+  /* Layout */
+  --page-gutter: clamp(20px, 3.125vw, 60px);
+  --content-width: 1200px;
+  --header-height: 190px;
+  --section-space: clamp(80px, 10vw, 160px);
+}

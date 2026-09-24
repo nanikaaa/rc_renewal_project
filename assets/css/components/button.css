@@ -1,0 +1,113 @@
+.contact-btn {
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background: var(--linear-bg);
+  color: var(--white);
+  font-family: var(--montserrat);
+  font-size: var(--f16);
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 1;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  border-color: transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    var(--linear-bg) border-box;
+  box-shadow: 0 3px 2px rgb(0 0 0 / 20%);
+  transform: translateY(-3px);
+}
+
+.contact-btn:hover span {
+  background: var(--linear-bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-btn:active {
+  transform: translateY(-1px);
+}
+
+.phone-default,
+.phone-hover {
+  transition: opacity 0.3s ease;
+}
+
+.phone-hover {
+  opacity: 0;
+}
+
+.contact-btn:hover .phone-default {
+  opacity: 0;
+}
+
+.contact-btn:hover .phone-hover {
+  opacity: 1;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  position: relative;
+  z-index: 12;
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 4px 18px rgb(45 50 85 / 12%);
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  position: absolute;
+  left: 11px;
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--linear-bg);
+  transition:
+    top 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 14px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 21px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 28px;
+}
+
+.site-header.is-open .menu-toggle span:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+
+.site-header.is-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header.is-open .menu-toggle span:nth-child(3) {
+  top: 21px;
+  transform: rotate(-45deg);
+}

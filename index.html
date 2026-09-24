@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="株式会社ライトコアは、デザインとテクノロジーでビジネスの可能性を広げます。" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/layout/footer.css">
+
+  <title>株式会社ライトコア | RIGHTCORE</title>
+</head>
+
+<body class="is-loading">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <!-- Page loader -->
+  <div class="page-loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-brand">RIGHTCORE</div>
+      <div class="loader-sub">CREATIVE COMPANY</div>
+
+      <div class="loader-percent">0%</div>
+
+      <div class="loader-track" aria-hidden="true">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div data-include="./sections/header.html"></div>
+
+  <main id="main-content">
+    <!-- MV -->
+    <div data-include="./sections/mv.html"></div>
+
+    <!-- Marquee -->
+    <div data-include="./sections/marquee.html"></div>
+
+    <!-- About -->
+    <div data-include="./sections/about.html"></div>
+  </main>
+
+  <div data-include="./sections/footer.html"></div>
+
+  <noscript>
+    <style>
+      .page-loader {
+        display: none;
+      }
+
+      body.is-loading {
+        overflow: auto;
+      }
+    </style>
+
+    <p class="noscript-message">
+      このサイトを表示するにはJavaScriptを有効にしてください。
+    </p>
+  </noscript>
+  
+  <script type="module" src="./assets/js/core/include.js"></script>
+  <script src="./assets/js/sections/footer.js"></script>
+  <script type="module" src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

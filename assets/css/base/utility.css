@@ -1,0 +1,26 @@
+/* Font families */
+.noto-sans {
+  font-family: var(--noto-sans);
+}
+
+.montserrat {
+  font-family: var(--montserrat);
+}
+
+/* Text colors */
+.black {
+  color: var(--black);
+}
+
+.secondary {
+  color: var(--secondary-black);
+}
+
+/* Gradient text */
+.linear-text {
+  background: var(--linear-bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
