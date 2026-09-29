@@ -25,3 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.swiper-sec {
+  padding: 65px 0;
+}
